@@ -5,7 +5,7 @@ A docker image for calibre
 	docker run -d \
 		--name calibre-server \
 		-p 8080:8080 \
-		-e LIBDIRLIST='("/calibre-manga" "/manga-toadd" "/calibre-ebook" "/ebook-toadd")' \
+		-e LIBDIRLIST='/calibre-manga /manga-toadd /calibre-ebook /ebook-toadd' \
 		-v ~/manga-toadd:/manga-toadd \
 		-v ~/ebook-toadd:/ebook-toadd \
 		-v ~/calibre-manga:/calibre-manga \
